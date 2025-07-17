@@ -16,8 +16,6 @@
 6. [Technologies & Libraries](#-technologies--libraries)
 7. [Sample Outputs](#-sample-outputs)
 8. [How to Run](#-how-to-run)
-9. [Future Improvements](#-future-improvements)
-10. [References](#-references)
 
 ---
 
