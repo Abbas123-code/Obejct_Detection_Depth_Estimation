@@ -60,31 +60,20 @@ The main goal is to analyze how accurately depth estimation corresponds to groun
 Depth estimation was done using **camera intrinsic parameters**.
 
 ### **Formulas**
+### **Formulas**
 
 1. **Intrinsic Matrix**  
-   \[
-   K = 
-   \begin{bmatrix}
-   f_x & 0 & c_x \\
-   0 & f_y & c_y \\
-   0 & 0 & 1
-   \end{bmatrix}
-   \]
+![Intrinsic Matrix](https://latex.codecogs.com/png.latex?K%20%3D%20%5Cbegin%7Bbmatrix%7Df_x%260%26c_x%5C%5C0%26f_y%26c_y%5C%5C0%260%261%5Cend%7Bbmatrix%7D)
 
 2. **3D Direction Vector**  
-   \[
-   d = K^{-1} \cdot p
-   \]
+![3D Direction](https://latex.codecogs.com/png.latex?d%20%3D%20K%5E%7B-1%7D%20%5Ccdot%20p)
 
 3. **Depth (Z) and 3D Coordinates (X, Y, Z)**  
-   \[
-   Z = \frac{h}{d_z}, \quad X = Z \cdot d_x, \quad Y = Z \cdot d_y
-   \]
+![Depth](https://latex.codecogs.com/png.latex?Z%20%3D%20%5Cfrac%7Bh%7D%7Bd_z%7D%2C%20%5Cquad%20X%20%3D%20Z%20%5Ccdot%20d_x%2C%20%5Cquad%20Y%20%3D%20Z%20%5Ccdot%20d_y)
 
 4. **Distance from Camera**  
-   \[
-   Distance = \sqrt{X^2 + Y^2 + Z^2}
-   \]
+![Distance](https://latex.codecogs.com/png.latex?Distance%20%3D%20%5Csqrt%7BX%5E2%20%2B%20Y%5E2%20%2B%20Z%5E2%7D)
+
 
 ---
 
