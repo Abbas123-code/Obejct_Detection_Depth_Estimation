@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Authors](#-authors)
 3. [Approach](#-approach)
@@ -21,13 +21,13 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This project uses **YOLOv8x** for **2D object detection** and leverages **intrinsic camera parameters** from the **KITTI dataset** to estimate the **3D depth of detected cars**.  
 The main goal is to analyze how accurately depth estimation corresponds to ground-truth values and identify factors affecting discrepancies.
 
 ---
 
-## 👨‍💻 Authors
+##  Authors
 - **Manoj Nagendrakumar** (Matriculation No: 16344060, Master’s Mechatronics)  
 - **Mohammed Kumail Abbas** (Matriculation No: 18743947, Master’s Mechatronics)  
 
@@ -80,19 +80,19 @@ Distance = √(X² + Y² + Z²)
 
 ---
 
-## 📊 Results
+##  Results
 
-### ✅ Images with Proper Detection
+###  Images with Proper Detection
 - Accurate depth estimation for clear, unobstructed cars.  
 - Good performance up to **40 meters**.
 
-### ⚠️ Complex Scenarios
+###  Complex Scenarios
 - Errors due to:
   - Occlusions
   - False positives
   - Poor lighting/weather conditions
 
-### 🚫 No Detection
+###  No Detection
 - Cases where no cars were detected in the frame.
 
 ### **Overall**
@@ -100,7 +100,7 @@ Distance = √(X² + Y² + Z²)
 
 ---
 
-## 🛠️ Technologies & Libraries
+##  Technologies & Libraries
 - **Python 3.x**
 - **YOLOv8 (Ultralytics)**
 - **OpenCV (cv2)**
@@ -109,7 +109,7 @@ Distance = √(X² + Y² + Z²)
 
 ---
 
-## 🖼️ Sample Outputs
+##  Sample Outputs
 
 | Detection | Depth Estimation | Accuracy Plot |
 |-----------|-----------------|---------------|
@@ -117,7 +117,7 @@ Distance = √(X² + Y² + Z²)
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ```bash
 # Clone this repository
