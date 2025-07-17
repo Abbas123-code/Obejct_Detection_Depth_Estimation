@@ -1,4 +1,3 @@
-# Obejct_Detection_Depth_Estimation
 # 🚗 Object Detection and Depth Estimation using YOLOv8 & KITTI Dataset
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
@@ -60,20 +59,24 @@ The main goal is to analyze how accurately depth estimation corresponds to groun
 Depth estimation was done using **camera intrinsic parameters**.
 
 ### **Formulas**
+
 ### **Formulas**
 
 1. **Intrinsic Matrix**  
-![Intrinsic Matrix](https://latex.codecogs.com/png.latex?K%20%3D%20%5Cbegin%7Bbmatrix%7Df_x%260%26c_x%5C%5C0%26f_y%26c_y%5C%5C0%260%261%5Cend%7Bbmatrix%7D)
+K = | fx   0   cx |  
+   | 0    fy  cy |  
+   | 0    0    1 |
 
 2. **3D Direction Vector**  
-![3D Direction](https://latex.codecogs.com/png.latex?d%20%3D%20K%5E%7B-1%7D%20%5Ccdot%20p)
+d = inverse(K) · p
 
-3. **Depth (Z) and 3D Coordinates (X, Y, Z)**  
-![Depth](https://latex.codecogs.com/png.latex?Z%20%3D%20%5Cfrac%7Bh%7D%7Bd_z%7D%2C%20%5Cquad%20X%20%3D%20Z%20%5Ccdot%20d_x%2C%20%5Cquad%20Y%20%3D%20Z%20%5Ccdot%20d_y)
+3. **Depth & 3D Coordinates**  
+Z = h / dz  
+X = Z · dx  
+Y = Z · dy
 
 4. **Distance from Camera**  
-![Distance](https://latex.codecogs.com/png.latex?Distance%20%3D%20%5Csqrt%7BX%5E2%20%2B%20Y%5E2%20%2B%20Z%5E2%7D)
-
+Distance = √(X² + Y² + Z²)
 
 ---
 
@@ -110,9 +113,7 @@ Depth estimation was done using **camera intrinsic parameters**.
 
 | Detection | Depth Estimation | Accuracy Plot |
 |-----------|-----------------|---------------|
-| ![Detection]<img width="1116" height="328" alt="image" src="https://github.com/user-attachments/assets/3a761c86-1e6e-4042-b7f9-bff1b384a0ea" />
- |  ![Plot]<img width="685" height="655" alt="image" src="https://github.com/user-attachments/assets/ab5e1150-2100-43f6-88bb-87cf2bf20e88" />
- |
+| ![Detection]<img width="1116" height="328" alt="image" src="https://github.com/user-attachments/assets/3a761c86-1e6e-4042-b7f9-bff1b384a0ea" /> | ![Plot]<img width="685" height="655" alt="image" src="https://github.com/user-attachments/assets/ab5e1150-2100-43f6-88bb-87cf2bf20e88" /> |
 
 ---
 
