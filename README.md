@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Object%20Detection-red)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Status](https://img.shields.io/badge/Status-Academic%20report-blue)
 
 ---
 
@@ -26,8 +26,8 @@ The main goal is to analyze how accurately depth estimation corresponds to groun
 ---
 
 ##  Authors
-- **Manoj Nagendrakumar** (Matriculation No: 16344060, Master’s Mechatronics)  
-- **Mohammed Kumail Abbas** (Matriculation No: 18743947, Master’s Mechatronics)  
+- **Manoj Nagendrakumar** (Master’s Mechatronics)  
+- **Mohammed Kumail Abbas** (Master’s Mechatronics)  
 
 **Guided by:** Prof. Dr. Stefan Elser
 
@@ -58,7 +58,7 @@ Depth estimation was done using **camera intrinsic parameters**.
 
 ### **Formulas**
 
-### **Formulas**
+> Note: notation follows the report. This README does not state the camera height or the ground-plane assumption behind `Z = h / dz`; see `object_detection.pdf` for the derivation.
 
 1. **Intrinsic Matrix**  
 K = | fx   0   cx |  
@@ -111,21 +111,11 @@ Distance = √(X² + Y² + Z²)
 
 | Detection | Depth Estimation | Accuracy Plot |
 |-----------|-----------------|---------------|
-| ![Detection]<img width="1116" height="328" alt="image" src="https://github.com/user-attachments/assets/3a761c86-1e6e-4042-b7f9-bff1b384a0ea" /> | ![Plot]<img width="685" height="655" alt="image" src="https://github.com/user-attachments/assets/ab5e1150-2100-43f6-88bb-87cf2bf20e88" /> |
+| <img width="1116" height="328" alt="image" src="https://github.com/user-attachments/assets/3a761c86-1e6e-4042-b7f9-bff1b384a0ea" /> | <img width="685" height="655" alt="image" src="https://github.com/user-attachments/assets/ab5e1150-2100-43f6-88bb-87cf2bf20e88" /> |
 
 ---
 
-##  How to Run
-
-```bash
-# Clone this repository
-git clone https://github.com/<your-username>/<repo-name>.git
-
-# Move into project folder
-cd <repo-name>
-
-# Install dependencies
-pip install ultralytics opencv-python numpy matplotlib
-
-# Run detection & depth estimation script
-python object_detection_depth.py
+## Repository contents and status
+This repository currently contains the project **report** (`object_detection.pdf`) and this summary only.
+The Python source, model weights and the KITTI data are **not** included, so the results cannot be re-run from this repository.
+The YOLOv8 model is the pretrained Ultralytics checkpoint; KITTI data must be obtained from the official KITTI site under its own terms.
